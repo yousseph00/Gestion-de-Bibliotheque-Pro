@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Bibliothèque Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestion de Bibliothèque</h1>
+            <input type="text" id="searchInput" placeholder="Rechercher un livre...">
+        </header>
+
+        <main>
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Auteur</th>
+                        <th>Année</th>
+                        <th>Prix</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="bookList">
+                    </tbody>
+            </table>
+
+            <section id="addBookSection">
+                <h2>Ajouter un livre</h2>
+                <form id="bookForm">
+                    <input type="text" id="title" placeholder="Titre" required>
+                    <input type="text" id="author" placeholder="Auteur" required>
+                    <input type="number" id="year" placeholder="Année" required>
+                    <input type="text" id="price" placeholder="Prix (ex: 5000 FCFA)" required>
+                    <input type="text" id="imageUrl" placeholder="URL Image couverture">
+                    <button type="submit" id="submitBtn">Ajouter</button>
+                </form>
+            </section>
+        </main>
+
+        <div id="bookModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalDetails"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
