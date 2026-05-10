@@ -1,54 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+    <!-- Encodage UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de Bibliothèque Pro</title>
+
+    <!-- Titre de la page -->
+    <title>Gestion Bibliothèque</title>
+
+    <!-- Liaison fichier CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+    <!-- Conteneur principal -->
     <div class="container">
-        <header>
-            <h1>Gestion de Bibliothèque</h1>
-            <input type="text" id="searchInput" placeholder="Rechercher un livre...">
-        </header>
 
-        <main>
-            <table id="bookTable">
-                <thead>
-                    <tr>
-                        <th>Titre</th>
-                        <th>Auteur</th>
-                        <th>Année</th>
-                        <th>Prix</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="bookList">
-                    </tbody>
-            </table>
+        <!-- Titre principal -->
+        <h1>📚 Gestion de Bibliothèque</h1>
 
-            <section id="addBookSection">
-                <h2>Ajouter un livre</h2>
-                <form id="bookForm">
-                    <input type="text" id="title" placeholder="Titre" required>
-                    <input type="text" id="author" placeholder="Auteur" required>
-                    <input type="number" id="year" placeholder="Année" required>
-                    <input type="text" id="price" placeholder="Prix (ex: 5000 FCFA)" required>
-                    <input type="text" id="imageUrl" placeholder="URL Image couverture">
-                    <button type="submit" id="submitBtn">Ajouter</button>
-                </form>
-            </section>
-        </main>
+        <!-- Barre de recherche -->
+        <input type="text" id="searchInput" placeholder="Rechercher un livre...">
 
-        <div id="bookModal" class="modal" style="display:none;">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div id="modalDetails"></div>
-            </div>
+        <!-- Tableau des livres -->
+        <table>
+
+            <!-- En-tête du tableau -->
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                    <th>Année</th>
+                    <th>Prix</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <!-- Corps du tableau -->
+            <tbody id="bookTableBody">
+
+                <!-- Les livres seront ajoutés dynamiquement ici -->
+
+            </tbody>
+        </table>
+
+        <!-- Formulaire -->
+        <div class="form-container">
+
+            <h2>Ajouter un livre</h2>
+
+            <!-- Formulaire d'ajout et modification -->
+            <form id="bookForm">
+
+                <!-- Champ caché pour stocker l'index -->
+                <input type="hidden" id="bookIndex">
+
+                <!-- Champ titre -->
+                <input type="text" id="title" placeholder="Titre" required>
+
+                <!-- Champ auteur -->
+                <input type="text" id="author" placeholder="Auteur" required>
+
+                <!-- Champ année -->
+                <input type="number" id="year" placeholder="Année" required>
+
+                <!-- Champ prix -->
+                <input type="number" id="price" placeholder="Prix" required>
+
+                <!-- Champ image -->
+                <input type="text" id="image" placeholder="URL image couverture" required>
+
+                <!-- Bouton ajouter -->
+                <button type="submit">Ajouter</button>
+
+            </form>
+
         </div>
+
     </div>
 
+    <!-- Fenêtre modale -->
+    <div class="modal" id="bookModal">
+
+        <div class="modal-content">
+
+            <!-- Bouton fermeture -->
+            <span class="close">&times;</span>
+
+            <!-- Image du livre -->
+            <img id="modalImage" src="" alt="Livre">
+
+            <!-- Informations du livre -->
+            <h2 id="modalTitle"></h2>
+
+            <p><strong>Auteur :</strong> <span id="modalAuthor"></span></p>
+
+            <p><strong>Année :</strong> <span id="modalYear"></span></p>
+
+            <p><strong>Prix :</strong> <span id="modalPrice"></span> FCFA</p>
+
+        </div>
+
+    </div>
+
+    <!-- Liaison fichier JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
