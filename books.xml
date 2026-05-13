@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books>
+
+    <book>
+      <title>Apprendre le DOM</title>
+      <author>Tuteur Mouhamed M. Diouf</author>
+      <year>2022</year>
+      <price>7000 FCFA</price>
+      <cover>images/dom.jpg</cover>
+    </book>
+
+
+    <book>
+        <title>JavaScript Avancé</title>
+        <author>Mouhamed Moustapha Diouf</author>
+        <year>2020</year>
+        <price>5000 FCFA</price>
+        <image>images/js-avance.png</image> 
+    </book>
+
+
+    <book>
+        <title>Art Oratoire</title>
+        <author>Dr. Massamba Gueye</author>
+        <year>2024</year>
+        <price>15000</price>
+        <image>images/art_oratoire.png</image> 
+    </book>
+
+    <book>
+        <title>Les larmes noires</title>
+        <author>Julius Leister</author>
+        <year>2019</year>
+        <price>20000</price>
+        <image>images/larmes_noires.png</image> 
+    </book>
+
+</books>

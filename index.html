@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestion Bibliothèque</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>
+            <span>📚</span> 
+            <span class="gradient-text">Gestion de Bibliothèque</span> 
+        </h1>
+
+        <input type="text" id="searchInput" placeholder="Rechercher un livre par titre...">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                    <th>Année</th>
+                    <th>Prix</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="bookTableBody">
+                </tbody>
+        </table>
+
+        <div class="form-container">
+            <h2>Ajouter ou Modifier un livre</h2>
+
+            <form id="bookForm">
+                <input type="hidden" id="bookIndex" value="">
+
+                <input type="text" id="title" placeholder="Titre du livre" required>
+
+                <input type="text" id="author" placeholder="Auteur" required>
+                
+
+
+                <input type="date" id="year" required>
+                
+
+                <input type="text" id="price" placeholder="Prix (ex: 5000)" required>
+
+                <input type="text" id="image" placeholder="Ex: images/art_oratoire.png" required>
+
+                <button type="submit" id="submitBtn">Enregistrer le livre</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <img id="modalImage" src="" alt="Couverture du livre" style="width:200px; border-radius:8px;">
+            <h2 id="modalTitle"></h2>
+            
+            <div class="modal-info">
+                <p><strong>Auteur :</strong> <span id="modalAuthor"></span></p>
+                <p><strong>Année :</strong> <span id="modalYear"></span></p>
+                <p><strong>Prix :</strong> <span id="modalPrice"></span> FCFA</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
