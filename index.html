@@ -88,20 +88,26 @@
 
         <div class="modal-content">
 
-            <!-- Bouton fermeture -->
             <span class="close">&times;</span>
 
-            <!-- Image du livre -->
-            <img id="modalImage" src="" alt="Livre">
+            <!-- Image à gauche -->
+            <div class="modal-cover">
+                <img id="modalImage" src="/images/" alt="Livre">
+            </div>
 
-            <!-- Informations du livre -->
-            <h2 id="modalTitle"></h2>
+            <!-- Texte à droite -->
+           <!-- Texte à droite -->
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
 
-            <p><strong>Auteur :</strong> <span id="modalAuthor"></span></p>
+                <p id="modalAuthor"></p>
 
-            <p><strong>Année :</strong> <span id="modalYear"></span></p>
+                <p id="modalYear"></p>
 
-            <p><strong>Prix :</strong> <span id="modalPrice"></span> FCFA</p>
+                <p>
+                    <span id="modalPrice"></span> FCFA
+                </p>
+            </div>
 
         </div>
 
