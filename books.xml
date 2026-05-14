@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <books>
-
     <book>
-        <title>Clean Code</title>
-        <author>Robert C. Martin</author>
-        <year>2008</year>
-        <price>25000</price>
-        <image>https://m.media-amazon.com/images/I/41SH-SvWPxL.jpg</image>
+        <title>JavaScript Avancé</title>
+        <author>Tuteur Mouhamed M. Diouf</author>
+        <year>2020</year>
+        <price>5000</price>
+        <image>/images/js-avance.png</image>
     </book>
-
     <book>
-        <title>JavaScript The Good Parts</title>
-        <author>Douglas Crockford</author>
-        <year>2008</year>
-        <price>18000</price>
-        <image>https://m.media-amazon.com/images/I/81kqrwS1nNL.jpg</image>
+        <title>Apprendre le DOM</title>
+        <author>Tuteur Mouhamed M. Diouf</author>
+        <year>2022</year>
+        <price>7000</price>
+        <image>/images/dom.jpg</image>
     </book>
-
     <book>
         <title>Design Patterns</title>
         <author>Erich Gamma</author>
         <year>1994</year>
         <price>30000</price>
-        <image>https://m.media-amazon.com/images/I/81gtKoapHFL.jpg</image>
+        <image>/images/eloquent-js.jpg</image>
     </book>
-
 </books>

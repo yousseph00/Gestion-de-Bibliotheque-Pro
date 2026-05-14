@@ -114,13 +114,20 @@ function viewBook(index) {
 
     const book = books[index];
 
-    document.getElementById("modalImage").src = book.image;
+    const modalImg = document.getElementById("modalImage");
+    modalImg.src = book.image;
+    modalImg.style.display = "block";
+    modalImg.style.margin = "0 auto 15px";
+
     document.getElementById("modalTitle").textContent = book.title;
     document.getElementById("modalAuthor").textContent = book.author;
     document.getElementById("modalYear").textContent = book.year;
     document.getElementById("modalPrice").textContent = book.price;
 
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.textAlign = "center";
 }
 
 // Fermer modal
