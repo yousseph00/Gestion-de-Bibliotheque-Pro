@@ -5,20 +5,20 @@
         <author>Tuteur Mouhamed M. Diouf</author>
         <year>2020</year>
         <price>5000</price>
-        <image>/images/js-avance.png</image>
+        <image>images/js-avance.png</image>
     </book>
     <book>
         <title>Apprendre le DOM</title>
         <author>Tuteur Mouhamed M. Diouf</author>
         <year>2022</year>
         <price>7000</price>
-        <image>/images/dom.jpg</image>
+        <image>images/dom.jpg</image>
     </book>
     <book>
         <title>Design Patterns</title>
         <author>Erich Gamma</author>
         <year>1994</year>
         <price>30000</price>
-        <image>/images/eloquent-js.jpg</image>
+        <image>images/eloquent-js.jpg</image>
     </book>
 </books>
